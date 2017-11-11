@@ -49,7 +49,7 @@ public class Employee extends Person {
         this.qualification = qualification;
     }
 
-    public boolean isIsPaid() {
+    public boolean getIsPaid() {
         return isPaid;
     }
 
