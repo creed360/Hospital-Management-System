@@ -15,14 +15,24 @@ public class Employee extends Person {
     private int salary;
     private String qualification;
     private boolean isPaid;
+    private Hospital hospital;
 
     public Employee(String name, String gender, int age, String address, String phone, 
-            int empID, int salary, String  qualification, boolean isPaid){
+            int empID, int salary, String  qualification, boolean isPaid, Hospital hospital){
         super(name, gender, age, address, phone);
         this.empID=empID;
         this.salary=salary;
         this.qualification=qualification;
         this.isPaid=isPaid;
+        this.hospital=hospital;
+    }
+
+    public Hospital getHospital() {
+        return hospital;
+    }
+
+    public void setHospital(Hospital hospital) {
+        this.hospital = hospital;
     }
 
     public int getEmpID() {
@@ -55,8 +65,5 @@ public class Employee extends Person {
 
     public void setIsPaid(boolean isPaid) {
         this.isPaid = isPaid;
-    }
-    
-    
-    
+    }    
 }
