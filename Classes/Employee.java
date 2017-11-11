@@ -65,5 +65,5 @@ public class Employee extends Person {
 
     public void setIsPaid(boolean isPaid) {
         this.isPaid = isPaid;
-    }    
+    }
 }
