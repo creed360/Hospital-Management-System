@@ -14,7 +14,8 @@ public class Staff extends Employee {
     private String type;
     private String dutyShift;
     private String pin;
-    
+    private Account account;
+
     public Staff(String name, String gender, int age, String address, String phone,
             int empID, int salary, String qualification, boolean isPaid, 
             String type, String dutyShift, String pin,Hospital hospital) {
@@ -53,6 +54,14 @@ public class Staff extends Employee {
 
     public void setPin(String pin) {
         this.pin = pin;
+    }
+    
+    public Account getAccount() {
+        return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
     }
     
 }

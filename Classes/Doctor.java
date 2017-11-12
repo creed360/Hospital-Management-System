@@ -52,7 +52,7 @@ public class Doctor extends Employee{
         //Get maximum prescription ID from DB and add 1 then pass that to this function
         int precID=0;
         Patient patient=hospital.returnPatient(patientID);
-        prescriptions.add(new Prescription(precID,patient,advice,this));
+        prescriptions.add(new Prescription(precID,advice,patient,this));
     }
 
     void addAppointment(Appointment appointment){
